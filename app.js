@@ -15,7 +15,7 @@ const greetings = [
 
 const weather = [
     'The meteorological conditions are never wholly satisfactory',
-    'Global warming is the albatross weighing perpetually upon the earth'
+    'Global warming is the inescapable albatross weighing perpetually upon the earth'
 ];
 
 const names = [
