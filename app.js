@@ -122,7 +122,7 @@ function readOutLoud(message) {
         speech.text = finalText;
     };
 
-    if (message.includes('god')) {
+    if (message.includes('God')) {
         const finalText = gods[Math.floor(Math.random() * gods.length)];
         speech.text = finalText;
     };
@@ -137,7 +137,7 @@ function readOutLoud(message) {
         speech.text = finalText;
     };
 
-    if (message.includes('films')) {
+    if (message.includes('films', 'film')) {
         const finalText = films[Math.floor(Math.random() * films.length)];
         speech.text = finalText;
     };
