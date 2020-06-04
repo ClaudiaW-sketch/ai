@@ -137,7 +137,7 @@ function readOutLoud(message) {
         speech.text = finalText;
     };
 
-    if (message.includes('films', 'film')) {
+    if (message.includes('films')) {
         const finalText = films[Math.floor(Math.random() * films.length)];
         speech.text = finalText;
     };
