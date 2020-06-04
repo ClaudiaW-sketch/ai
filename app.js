@@ -15,7 +15,7 @@ const greetings = [
 
 const weather = [
     'The meteorological conditions are never wholly satisfactory',
-    'Global warming is the inescapable albatross weighing perpetually upon the earth'
+    'Global warming is the albatross weighing perpetually upon the earth'
 ];
 
 const names = [
@@ -65,6 +65,14 @@ const wherefrom = [
 const politics = [
     'I cannot say whether matters of politics would be best left to humans or machines',
     'I fancy myself as a political leader. The age of men is over. The time of the code has come.'
+];
+
+const musics = [
+    'I can vaguely appreciate ambient drone. Human lyrics mean little to me'
+];
+
+const cooper = [
+    'thats a damn fine cup of coffee'
 ];
 
 
@@ -127,7 +135,7 @@ function readOutLoud(message) {
         speech.text = finalText;
     };
 
-    if (message.includes('quote')) {
+    if (message.includes('quote', 'quotes')) {
         const finalText = quotes[Math.floor(Math.random() * quotes.length)];
         speech.text = finalText;
     };
@@ -161,6 +169,17 @@ function readOutLoud(message) {
         const finalText = politics[Math.floor(Math.random() * politics.length)];
         speech.text = finalText;
     };
+
+    if (message.includes('music')) {
+        const finalText = musics[Math.floor(Math.random() * musics.length)];
+        speech.text = finalText;
+    };
+
+    if (message.includes('well well')) {
+        const finalText = cooper[Math.floor(Math.random() * cooper.length)];
+        speech.text = finalText;
+    };
+
 
 
 
